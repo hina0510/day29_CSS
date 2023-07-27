@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	header {background: red; height: 100px; text-align: center;
+	border: 4px solid black;margin: auto; 
+	}
+	div {display:flex; flex-flow:row;  height: 250px;}
+	div>nav {order:1; background: yellow; text-align: center;
+	border: 4px solid black; width: 15%;}
+	div>section {order:2; background: green; text-align: center;
+	border: 4px solid black; width: 60%;
+	}
+	div>aside {order:3; background: yellow; text-align: center;
+	border: 4px solid black; width: 25%;}
+	footer {background: pink; text-align: center;
+	border: 4px solid black; height: 80px;}
+	
+	.sed {height: 70%; display:flex; flex-flow: column; padding:"10px"}
+	.sed>header {background: skyblue; text-align: center;
+	border: 4px solid black; margin: 10px; height: 17%; padding:"1px"}
+	.sed>article {background: yellow; text-align: center;
+	border: 4px solid black; margin: 10px; height: 17%; padding:"1px"}
+	.sed>footer {background: pink; text-align: center;
+	border: 4px solid black; margin: 10px; height: 17%; padding:"1px"}
+	
+</style>
+</head>
+<body>
+	<header><h1>header</h1></header>
+	<div>
+		<nav><h2>nav</h2></nav>
+		<section>
+			<h2>section</h2>
+			<div class="sed">
+				<header>header</header>
+				<article>article</article>
+				<footer>footer</footer>
+			</div>
+		</section>
+		<aside><h2>aside</h2></aside>
+	</div>
+	<footer><h2>footer</h2></footer>
+</body>
+</html>
